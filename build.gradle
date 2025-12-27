@@ -1,0 +1,18 @@
+buildscript {
+    ext {
+        agp_version2 = '8.6.0'
+    }
+    dependencies {
+        classpath libs.google.services
+        classpath libs.gradle
+    }
+}
+plugins {
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.google.gms.google.services) apply false
+}
+
+ext {
+    myValue = 'D:\\Android\\keystore\\PDFspliter\\keystore.jks'
+    Keystore = myValue
+}

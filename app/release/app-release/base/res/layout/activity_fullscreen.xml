@@ -1,0 +1,15 @@
+
+Â
+;
+android*http://schemas.android.com/apk/res/android*5androidx.swiperefreshlayout.widget.SwipeRefreshLayout"`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ"a
+*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"y
+*http://schemas.android.com/apk/res/androidid@+id/swipe_refresh_layout"(Ğ„2#
+!ƒƒ øid/swipe_refresh_layout0*‹
+‚WebView"Q
+*http://schemas.android.com/apk/res/androidlayout_margin16dp"(ö„2:h "`
+*http://schemas.android.com/apk/res/androidlayout_widthmatch_parent"(ô„2:0ÿÿÿÿÿÿÿÿÿ"a
+*http://schemas.android.com/apk/res/androidlayout_heightmatch_parent"(õ„2:0ÿÿÿÿÿÿÿÿÿ"_
+*http://schemas.android.com/apk/res/androidid@+id/webview"(Ğ„2
+Áƒ ø
+id/webview0(*

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title data-i18n="privacy_policy_title">Política de Privacidade</title>
+    <link href="style.css" rel="Stylesheet">
+    <style>
+        body {
+
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Estrutura do Menu Lateral (Sidenav) -->
+<div class="sidenav" id="mySidenav">
+    <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">×</a>
+    <a data-i18n="menu_split" href="Dividir/index.html">Dividir</a>
+    <a data-i18n="menu_merge" href="UnirPDF/index.html">Unir PDF</a>
+    <a data-i18n="menu_split_only" href="DividirApenas/index.html">Dividir Apenas</a>
+    <a data-i18n="menu_jpg_to_pdf" href="JPGtoPDF/index.html">JPG to PDF</a>
+    <a data-i18n="menu_pdf_to_jpg" href="PDFtoJPG/index.html">PDF to JPG</a>
+    <a data-i18n="menu_privacy" href="privacy_policy.html">Privacidade</a>
+    <div class="language-selector">
+        <p data-i18n="menu_language">Idiomas</p>
+        <div class="select-container">
+            <label for="language-select"></label><select id="language-select"
+                                                         onchange="changeLanguage(this.value)">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+        </select>
+        </div>
+    </div>
+    <a data-i18n="exit" href="javascript:void(0)" onclick="exitApp()">Sair</a>
+</div>
+
+<div class="navigation">
+    <nav>
+        <div class="nav-wrapper">
+            <!-- Ícone do Menu (Hamburger) -->
+            <span class="open-nav" onclick="openNav()">☰</span>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="col-md-12 columnBlockLayout">
+        <h1 data-i18n="privacy_policy_main_title">Política de Privacidade para PDFspliter</h1>
+
+        <p data-i18n="privacy_policy_intro">A sua privacidade é importante para nós. A política do
+            PDFspliter é respeitar a sua
+            privacidade
+            em relação a qualquer informação sua que possamos coletar no nosso aplicativo.</p>
+
+        <h2 data-i18n="privacy_policy_collected_title">1. Informações que Coletamos</h2>
+        <p data-i18n="privacy_policy_collected_text">Nosso aplicativo, PDFspliter, foi projetado
+            para funcionar offline. Ele não coleta,
+            armazena ou
+            transmite nenhuma informação pessoal identificável sobre você. Todos os arquivos PDF
+            e imagens
+            que você processa com o aplicativo permanecem no seu dispositivo.</p>
+
+        <h2 data-i18n="privacy_policy_permissions_title">2. Permissões do Aplicativo</h2>
+        <p data-i18n="privacy_policy_permissions_text">O aplicativo pode solicitar as seguintes
+            permissões:</p>
+        <ul>
+            <li data-i18n="privacy_policy_permissions_storage"><strong>Acesso ao armazenamento
+                (Leitura e Escrita):</strong> Esta permissão é
+                necessária
+                para que o aplicativo possa ler os arquivos (PDFs, JPGs) que você seleciona e
+                salvar os
+                arquivos processados no seu dispositivo.
+            </li>
+        </ul>
+
+        <h2 data-i18n="privacy_policy_usage_title">3. Dados de Uso e Análise</h2>
+        <p data-i18n="privacy_policy_usage_text">Não usamos nenhuma ferramenta de análise de
+            terceiros para coletar dados sobre como
+            você usa o
+            aplicativo. Nenhuma informação sobre suas atividades no aplicativo é enviada para
+            nós ou para
+            terceiros.</p>
+
+        <h2 data-i18n="privacy_policy_providers_title">4. Provedores de Serviços</h2>
+        <p data-i18n="privacy_policy_providers_text">Não empregamos empresas e indivíduos de
+            terceiros em nosso aplicativo.</p>
+
+        <h2 data-i18n="privacy_policy_security_title">5. Segurança</h2>
+        <p data-i18n="privacy_policy_security_text">Como não coletamos seus dados, não há risco de
+            exposição de dados do nosso lado. A
+            segurança dos
+            seus arquivos no seu dispositivo depende das medidas de segurança gerais do seu
+            dispositivo
+            Android.</p>
+
+        <h2 data-i18n="privacy_policy_links_title">6. Links para Outros Sites</h2>
+        <p data-i18n="privacy_policy_links_text">Nosso aplicativo não contém links para outros
+            sites.</p>
+
+        <h2 data-i18n="privacy_policy_children_title">7. Privacidade Infantil</h2>
+        <p data-i18n="privacy_policy_children_text">Nossos serviços não se destinam a menores de 13
+            anos. Como não coletamos informações
+            pessoais,
+            não coletamos intencionalmente informações de crianças menores de 13 anos.</p>
+
+        <h2 data-i18n="privacy_policy_changes_title">8. Alterações a Esta Política de
+            Privacidade</h2>
+        <p data-i18n="privacy_policy_changes_text">Podemos atualizar nossa Política de Privacidade
+            de tempos em tempos. Assim,
+            aconselhamos que você
+            revise esta página periodicamente para quaisquer alterações. Iremos notificá-lo de
+            quaisquer
+            alterações, publicando a nova Política de Privacidade nesta página.</p>
+        <p data-i18n="privacy_policy_effective_date">Esta política é efetiva a partir de
+            25/12/2025.</p>
+
+        <h2 data-i18n="privacy_policy_contact_title">9. Contato</h2>
+        <p data-i18n="privacy_policy_contact_text">Se você tiver alguma dúvida ou sugestão sobre
+            nossa Política de Privacidade, não
+            hesite em nos
+            contatar em marcos.nunes.lph@outlook.com.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

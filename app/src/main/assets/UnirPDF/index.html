@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title data-i18n="unir_pdf_title">Unir PDF</title>
+    <link href="style.css" rel="Stylesheet">
+</head>
+
+<body>
+
+<!-- Estrutura do Menu Lateral (Sidenav) -->
+<div class="sidenav" id="mySidenav">
+    <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">×</a>
+    <a href="../Dividir/index.html" data-i18n="menu_split">Dividir</a>
+    <a href="../UnirPDF/index.html" data-i18n="menu_merge">Unir PDF</a>
+    <a href="../DividirApenas/index.html" data-i18n="menu_split_only">Dividir Apenas</a>
+    <a href="../JPGtoPDF/index.html" data-i18n="menu_jpg_to_pdf">JPG to PDF</a>
+    <a href="../PDFtoJPG/index.html" data-i18n="menu_pdf_to_jpg">PDF to JPG</a>
+    <a href="../privacy_policy.html" data-i18n="menu_privacy">Privacidade</a>
+    <div class="language-selector">
+        <p data-i18n="menu_language">Idiomas</p>
+        <div class="select-container">
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="pt">Português</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+            </select>
+        </div>
+    </div>
+    <a href="javascript:void(0)" onclick="exitApp()" data-i18n="exit">Sair</a>
+</div>
+
+<div class="navigation">
+    <nav>
+        <div class="nav-wrapper">
+            <!-- Ícone do Menu (Hamburger) -->
+            <span class="open-nav" onclick="openNav()">☰</span>
+        </div>
+    </nav>
+</div>
+
+<div class="row hero-section" data-component-theme="portalThemeColor8">
+    <div class="container">
+        <div class="col-md-12 columnBlockLayout">
+            <h1 data-i18n="unir_pdf_main_title">Unir PDFs em um Único Arquivo</h1>
+            <h4 style="text-align: center;" data-i18n="unir_pdf_subtitle">Una seus PDFs!</h4>
+            <label class="custom-file-upload" for="pdfUpload" data-i18n="unir_pdf_select_files">
+                Escolher Arquivos PDF
+            </label>
+            <input accept=".pdf" id="pdfUpload" multiple name="pdfUpload" style="display: none;"
+                   type="file"/>
+            <span id="file-selected-name" data-i18n="no_file_selected">Nenhum arquivo selecionado</span>
+            <!-- Exibe nome dos arquivos -->
+            <button id="mergePdf" class="button1" data-i18n="unir_pdf_merge_button">
+                Unir PDFs
+            </button>
+            <span id="log-messages" data-i18n="unir_pdf_log_ready">Pronto para processar. Selecione arquivos PDF.</span>
+            <!-- Mensagens de log -->
+        </div>
+    </div>
+</div>
+
+<div class="row info-section sectionBlockLayout">
+    <div class="container">
+        <div class="col-md-12 columnBlockLayout">
+            <h2 data-i18n="instructions">Instruções</h2>
+            <p data-i18n="unir_pdf_instructions_text">
+                1. Clique em "Escolher Arquivos PDF" para selecionar os arquivos PDF que você deseja
+                unir.<br>
+                2. A ordem dos arquivos selecionados será a ordem em que serão unidos no PDF
+                final.<br>
+                3. Clique no botão "Unir PDFs".<br>
+                4. Um link para download do PDF unificado será gerado após o processamento.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row info-section sectionBlockLayout">
+    <div class="container">
+        <div class="col-md-12 columnBlockLayout">
+            <h2 data-i18n="unir_pdf_download_title">Baixe o seu PDF Unificado</h2>
+            <div id="pdf-download-container"> <!-- Container para o link de download -->
+                <!-- O link para download aparecerá aqui -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

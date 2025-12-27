@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "572199791856",
+    "project_id": "pdf-spliter-free",
+    "storage_bucket": "pdf-spliter-free.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572199791856:android:c32e0706f4bf0cac9de635",
+        "android_client_info": {
+          "package_name": "com.PDFspliter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrAwpzR4gv3hMyuCkBvQjjGgTUOxYNAkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

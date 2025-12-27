@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title data-i18n="home_title">Dividir - Home</title>
+    <link href="style.css" rel="Stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<!-- Estrutura do Menu Lateral (Sidenav) -->
+<div class="sidenav" id="mySidenav">
+    <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">×</a>
+    <a href="Dividir/index.html" data-i18n="menu_split">Dividir</a>
+    <a href="UnirPDF/index.html" data-i18n="menu_merge">Unir PDF</a>
+    <a href="DividirApenas/index.html" data-i18n="menu_split_only">Dividir Apenas</a>
+    <a href="JPGtoPDF/index.html" data-i18n="menu_jpg_to_pdf">JPG to PDF</a>
+    <a href="PDFtoJPG/index.html" data-i18n="menu_pdf_to_jpg">PDF to JPG</a>
+    <a href="privacy_policy.html" data-i18n="menu_privacy">Privacidade</a>
+    <div class="language-selector">
+        <p data-i18n="menu_language">Idiomas</p>
+        <div class="select-container">
+            <select id="language-select" onchange="changeLanguage(this.value)">
+                <option value="pt">Português</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+            </select>
+        </div>
+    </div>
+    <a href="javascript:void(0)" onclick="exitApp()" data-i18n="exit">Sair</a>
+</div>
+
+<div class="navigation">
+    <nav>
+        <div class="nav-wrapper">
+            <!-- Ícone do Menu (Hamburger) -->
+            <span class="open-nav" onclick="openNav()">☰</span>
+        </div>
+    </nav>
+</div>
+
+<div class="row hero-section" data-component-theme="portalThemeColor8">
+    <div class="container">
+        <div class="col-md-12 columnBlockLayout">
+            <h1 style="text-align: center;" data-i18n="main_title">Processador de PDF</h1>
+            <h4 style="text-align: center;" data-i18n="main_subtitle">Divida e organize seus PDFs! Ideal para declarações de
+                IR.</h4>
+            <label class="custom-file-upload" for="pdfUpload" data-i18n="select_pdf">
+                Selecionar PDF
+            </label>
+            <input accept=".pdf" id="pdfUpload" multiple
+                   name="pdfUpload"
+                   style="display: none;" type="file"/>
+            <span id="file-selected-name" data-i18n="no_file_selected">Nenhum arquivo selecionado</span>
+            <button class="button1" id="processarPDF" data-i18n="process_pdf">Processar PDF</button>
+            <span id="log-messages"></span>
+        </div>
+    </div>
+</div>
+
+<div class="row info-section sectionBlockLayout">
+    <div class="container">
+        <div class="col-md-12 columnBlockLayout">
+            <h2 data-i18n="instructions">Instruções</h2>
+            <p data-i18n="instructions_text">
+                1. Clique em "Selecionar PDF" para escolher um ou mais arquivos do seu
+                computador.<br>
+                2. O nome do arquivo selecionado aparecerá abaixo do botão.<br>
+                3. Clique no botão "Processar PDF".<br>
+                4. Aguarde enquanto o sistema divide o PDF em páginas individuais e tenta
+                identificar o nome do prestador em
+                cada uma.<br>
+                5. As páginas processadas aparecerão na seção "Páginas Processadas" abaixo, com
+                botões para download. Cada
+                arquivo será nomeado com o nome do prestador (se encontrado).
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row info-section sectionBlockLayout">
+    <div class="container">
+        <div class="col-md-12 columnBlockLayout">
+            <h2 data-i18n="processed_pages">Páginas Processadas</h2>
+            <div id="pdf-pages-container">
+                <!-- As páginas processadas aparecerão aqui -->
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
