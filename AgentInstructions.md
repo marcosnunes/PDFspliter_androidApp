@@ -1,0 +1,1 @@
+This is an Android application named PDFspliter. The main purpose of this application is to allow users to split PDF files into multiple smaller documents.
